@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 
-	let siteUrl = `${$page.url.protocol}//${$page.url.hostname}:${$page.url.port ?? ''}`;
+	let siteUrl = 'https://sveltesocietyuganda.vercel.app';
 	let siteName = 'Svelte Society Uganda';
 
 	interface Props {

@@ -6,14 +6,14 @@
 
 	interface Props {
 		title: string;
-		description: string;
+		description?: string;
 		ogImage?: string;
 		ogImageAlt?: string;
 	}
 
 	let {
 		title,
-		description,
+		description = 'Join Svelte Uganda, a vibrant community of Svelte enthusiasts dedicated to open-source collaboration, skill development, and advancing web development with Svelte in Uganda. Connect, learn, and contribute to the growing Svelte ecosystem!',
 		ogImage = '/images/default-og-image.png',
 		ogImageAlt = 'Svelte Society Uganda'
 	}: Props = $props();
